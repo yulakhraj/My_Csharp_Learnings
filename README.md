@@ -1,4 +1,4 @@
-C # notes
+#C-Sharp notes
 
 C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
 The first version was released in year 2002. The latest version, C# 11, was released in November 2022.
@@ -7,20 +7,21 @@ C# is used to develop web apps, desktop apps, mobile apps, games and much more.
 framework -> Complete development environment
 CLR-> runtime environment for .net
 
-BOOT- suceesful loading of OS
+BOOT- succesful loading of OS
 
 containers--> hold data
 
-C# prperties:
+C# properties:
 -->The Properties have accessors that are used to set, get or compute their values.
 -->provide controlled access to them through getter and/or setter methods. 
 
 arrays are objects.
 static member - share common all objects
-## non static member can we use both static and non-static.
-## But static member can use only static member functions.
+--> non static member can we use both static and non-static.
+--> But static member can use only static member functions.
 
-## can we write only static block ---> No    but in java yes
+--> can we write only static block ---> No    but in java yes
+
 
 Abstract class --> Only have one abstract method
 			   --> only method signature are there, no body is present
@@ -28,6 +29,7 @@ Abstract class --> Only have one abstract method
 Why interface ?
 --> loose couple(own implementation)
 --> multiple inheritance
+
 ---------------------------------------------------------------------------------
 String --> class
 string --> allias of System.String
@@ -43,6 +45,7 @@ string:
 iterpolated string -->$
 
 var info = (fname: "hemant", lname: "shah",desg: "Academic head");
+
 ---------------------------------------------------------------------------
 cl.exe --> complier and linker
 link.exe -->  linker
@@ -54,6 +57,7 @@ ildasm.exe-->intermediate language disassemble
 -------------------------------------------------------------------------
 boxing-implicity called
 unboxing - sometime we explicitly call
+
 --------------------------------------------------------------------------		
 Thread safe--> synchronized , mutually exculsive thread ,concurrent
 concurrent - synchronous
@@ -73,6 +77,7 @@ Generics:
 why generics?
 -->for collection framework
 --> for type safe
+
 ----------------------------------------------------------------------------------------------------
 Collections-->
 -->Group of objects
@@ -83,6 +88,7 @@ Collections-->
 why collection?
 --> directly implement that functions which are already defined in library
 --> predefined algorithm and their implementation
+
 ------------------------------------------------------------
 Delegates:
 -->delegate is a reference to the method. 
@@ -91,12 +97,14 @@ Delegates:
 -->It stored in arrays.
 -->It can be static or instance method;
 -->Delegates is derived class of System.Delegate.
+
 ----------------------------------------------------------------
 Anonmoyous Function:
 -->A function without name is known as anonymous function.
 -->Two types of anonymous functions:
 		Lambda Expressions
 		Anonymous Methods
+  
 ----------------------------------------------------------------
 Lamda Expression:
 -->Lambda expression is an anonymous function which we can use to create delegates.
