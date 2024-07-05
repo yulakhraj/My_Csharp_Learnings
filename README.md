@@ -1,4 +1,4 @@
-#C-Sharp notes
+# C-Sharp notes
 
 C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
 The first version was released in year 2002. The latest version, C# 11, was released in November 2022.
@@ -11,7 +11,7 @@ BOOT- succesful loading of OS
 
 containers--> hold data
 
-C# properties:
+## C# properties:
 -->The Properties have accessors that are used to set, get or compute their values.
 -->provide controlled access to them through getter and/or setter methods. 
 
@@ -26,7 +26,7 @@ static member - share common all objects
 Abstract class --> Only have one abstract method
 			   --> only method signature are there, no body is present
 
-Why interface ?
+## Why interface ?
 --> loose couple(own implementation)
 --> multiple inheritance
 
@@ -68,7 +68,7 @@ strongly typed -> beacuse autoboxing not happens
 
 
 ------------------------------------------------------------------------------------------------
-Generics:
+## Generics:
 -->It is a concept that allows us to define classes and methods with placeholder. 
 -->Compiler replaces these placeholders with specified type at compile time. 
 -->The concept of generics is used to create general purpose classes and methods.
@@ -79,7 +79,7 @@ why generics?
 --> for type safe
 
 ----------------------------------------------------------------------------------------------------
-Collections-->
+## Collections-->
 -->Group of objects
 -->Predefined library of container classes which has predefine operation for insertion,deletion,searching,etc
 -->All the classes are of generic types.
@@ -90,7 +90,7 @@ why collection?
 --> predefined algorithm and their implementation
 
 ------------------------------------------------------------
-Delegates:
+## Delegates:
 -->delegate is a reference to the method. 
 -->It works like function pointer in C and C++. 
 -->But it is objected-oriented, secured and type-safe than function pointer.
@@ -99,14 +99,14 @@ Delegates:
 -->Delegates is derived class of System.Delegate.
 
 ----------------------------------------------------------------
-Anonmoyous Function:
+## Anonmoyous Function:
 -->A function without name is known as anonymous function.
 -->Two types of anonymous functions:
 		Lambda Expressions
 		Anonymous Methods
   
 ----------------------------------------------------------------
-Lamda Expression:
+L## amda Expression:
 -->Lambda expression is an anonymous function which we can use to create delegates.
 -->use to create anonmoyous class.
 -->declaration operator
@@ -114,7 +114,7 @@ Lamda Expression:
 
 ---------------------------------------------------------------
 
-Collection in C#:
+## Collection in C#:
 -->List
 -->HashSet
 -->SortedSet
@@ -127,7 +127,7 @@ Collection in C#:
 
 ---------------------------------------------------------------------
 
-Linq-->
+## Linq-->
 linq to objects
 linq to datasets
 linq to sql
