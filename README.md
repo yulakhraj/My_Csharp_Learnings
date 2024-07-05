@@ -1,137 +1,123 @@
-# C-Sharp notes
+# C# Notes
 
-C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
-The first version was released in year 2002. The latest version, C# 11, was released in November 2022.
-C# is used to develop web apps, desktop apps, mobile apps, games and much more.
+C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework. The first version was released in 2002, and the latest version, C# 11, was released in November 2022. C# is used to develop web apps, desktop apps, mobile apps, games, and much more.
 
-framework -> Complete development environment
-CLR-> runtime environment for .net
+## Key Concepts
 
-BOOT- succesful loading of OS
+### Framework
+- **Framework**: A complete development environment.
+- **CLR (Common Language Runtime)**: The runtime environment for .NET.
 
-containers--> hold data
+### Boot
+- **Boot**: Successful loading of the OS.
 
-## C# properties:
--->The Properties have accessors that are used to set, get or compute their values.
--->provide controlled access to them through getter and/or setter methods. 
+### Containers
+- **Containers**: Hold data.
 
-arrays are objects.
-static member - share common all objects
---> non static member can we use both static and non-static.
---> But static member can use only static member functions.
+### C# Properties
+- Properties have accessors (getters and setters) to set, get, or compute their values.
+- Provide controlled access to class members.
 
---> can we write only static block ---> No    but in java yes
+### Arrays
+- Arrays in C# are objects.
 
+### Static Members
+- Static members are shared among all objects.
+- Non-static members can use both static and non-static members, but static members can only use other static members.
 
-Abstract class --> Only have one abstract method
-			   --> only method signature are there, no body is present
+### Abstract Class
+- An abstract class can have one or more abstract methods.
+- Abstract methods have only method signatures; no body is present.
 
-## Why interface ?
---> loose couple(own implementation)
---> multiple inheritance
+### Interfaces
+- Provide loose coupling by allowing own implementation.
+- Support multiple inheritance.
 
----------------------------------------------------------------------------------
-String --> class
-string --> allias of System.String
+### Strings
+- **String**: A class.
+- **string**: Alias of System.String.
 
+```csharp
 <Button x:Name="GoBack" Content="Go" Click="GoBackClick" />
+string str9 = "abc";
+string str10 = "def";
+str9 += str10;
+```
+
+# Advanced C# Concepts
+
+## Compilers and Linkers
+
+- **cl.exe**: Compiler and linker.
+- **link.exe**: Linker.
+- **IL (Intermediate Language)**: Microsoft's intermediate language.
+- **ildasm.exe**: Intermediate language disassembler.
+
+## Boxing and Unboxing
+
+- **Boxing**: Implicitly called.
+- **Unboxing**: Explicitly called sometimes.
+
+## Thread Safety
+
+- **Thread safe**: Synchronized, mutually exclusive threads, concurrent.
+- **Concurrent**: Synchronous.
+- **Collections**: Asynchronous.
+
+## Generics
+
+- Define classes and methods with placeholders, which the compiler replaces with specified types at compile time.
+- Provide type safety.
+
+## Collections
+
+- Group of objects with predefined operations for insertion, deletion, searching, etc.
+- Classes are of generic types.
+
+## Delegates
+
+- A reference to a method.
+- Functions like function pointers in C and C++, but more secure and type-safe.
+- Can be static or instance methods.
+- Derived from `System.Delegate`.
+
+## Anonymous Functions
+
+- Functions without names.
+- Types: Lambda Expressions, Anonymous Methods.
+
+### Lambda Expressions
+
+- Anonymous functions to create delegates.
+- Used to create anonymous classes.
+- Declaration operator: `=>`.
+
+```csharp
+(input-parameters) => expression
+```
+
+# Collections in C#
+
+C# offers a variety of collections to manage and manipulate data efficiently:
+
+- **List**: Represents a strongly typed list of objects that can be accessed by index.
+- **HashSet**: Represents a collection of unique unordered elements.
+- **SortedSet**: Represents a collection of unique sorted elements.
+- **Stack**: Represents a last-in, first-out (LIFO) collection of objects.
+- **Queue**: Represents a first-in, first-out (FIFO) collection of objects.
+- **LinkedList**: Represents a doubly linked list of objects.
+- **Dictionary**: Represents a collection of key/value pairs.
+- **SortedDictionary**: Represents a collection of key/value pairs sorted by keys.
+- **SortedList**: Represents a collection of key/value pairs that are sorted by keys.
+
+## LINQ (Language Integrated Query)
+
+LINQ provides a unified way to query data from different data sources. Here are some common LINQ providers in C#:
+
+- **LINQ to Objects**: Querying in-memory objects.
+- **LINQ to DataSets**: Querying datasets.
+- **LINQ to SQL**: Querying relational databases using SQL.
+- **LINQ to Entities**: Querying Entity Framework data models.
+- **LINQ to XML**: Querying XML documents.
 
 
-            string str9 = "abc";
-            string str10 = "def";
-            str9 += str10;
-
-string:
-iterpolated string -->$
-
-var info = (fname: "hemant", lname: "shah",desg: "Academic head");
-
----------------------------------------------------------------------------
-cl.exe --> complier and linker
-link.exe -->  linker
-
-IL		-->intemediate language
-msil 	-->microsoft intermediate language
-ildasm.exe-->intermediate language disassemble
-
--------------------------------------------------------------------------
-boxing-implicity called
-unboxing - sometime we explicitly call
-
---------------------------------------------------------------------------		
-Thread safe--> synchronized , mutually exculsive thread ,concurrent
-concurrent - synchronous
-collections- asynchronous
-
-logs -> entry or exit point
-strongly typed -> beacuse autoboxing not happens 
-
-
-------------------------------------------------------------------------------------------------
-## Generics:
--->It is a concept that allows us to define classes and methods with placeholder. 
--->Compiler replaces these placeholders with specified type at compile time. 
--->The concept of generics is used to create general purpose classes and methods.
--->Type-safety
-
-why generics?
--->for collection framework
---> for type safe
-
-----------------------------------------------------------------------------------------------------
-## Collections-->
--->Group of objects
--->Predefined library of container classes which has predefine operation for insertion,deletion,searching,etc
--->All the classes are of generic types.
--->Every conatiner is implemented by templated or generics.
-
-why collection?
---> directly implement that functions which are already defined in library
---> predefined algorithm and their implementation
-
-------------------------------------------------------------
-## Delegates:
--->delegate is a reference to the method. 
--->It works like function pointer in C and C++. 
--->But it is objected-oriented, secured and type-safe than function pointer.
--->It stored in arrays.
--->It can be static or instance method;
--->Delegates is derived class of System.Delegate.
-
-----------------------------------------------------------------
-## Anonmoyous Function:
--->A function without name is known as anonymous function.
--->Two types of anonymous functions:
-		Lambda Expressions
-		Anonymous Methods
-  
-----------------------------------------------------------------
-L## amda Expression:
--->Lambda expression is an anonymous function which we can use to create delegates.
--->use to create anonmoyous class.
--->declaration operator
--->(input-parameters) => expression
-
----------------------------------------------------------------
-
-## Collection in C#:
--->List
--->HashSet
--->SortedSet
--->Stack
--->Queue
--->LinkedList
--->Dictionary
--->SortedDictionary
--->SortedList
-
----------------------------------------------------------------------
-
-## Linq-->
-linq to objects
-linq to datasets
-linq to sql
-linq to entities
-linq to Xml
-
--->return objects not primitive value
